@@ -106,4 +106,14 @@ Difference between JDK, JRE and JVM
       any device with the corresponding JVM for its platform.
 
 
+Class
+A class is a blueprint which do not have any physical existence.
+The physical existence of class is called object.
+
+When an object is created then it get the memory in heap area.
+The reference variable refers to the object allocated in the heap memory area.
+So reference store the memory address of object get created in heap.
+
+The reference is created in stack memory.
+
  */
