@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tables</h1>
+    <p>
+        What is a Table?
+        <ul>
+            <li>
+                <p>Is is a specific type of arangement of data int the form rows and column.</p>
+            </li>
+        </ul>
+    </p>
+    <p>
+        Some Imp table tags
+        <ul>
+            <li>
+                <p>table</p>
+            </li>
+            <li>
+                <p>thead -> the heading of the table should come here</p>
+            </li>
+            <li>
+                <p>tbody -> This contain the main content of the table</p>
+            </li>
+            <li>
+                <p>tfoot -> if the table contain some summarized line about the table</p>
+            </li>
+            <li>
+                <p>tr -> is used to create table row</p>
+            </li>
+            <li>
+                <p>td -> is used have data in the table</p>
+            </li>
+            <li>
+                <p>th -> to create any heading in table head</p>
+            </li>
+        </ul>
+    </p>
+    <table border="1">
+        <thead>
+            <th>Student Id</th>
+            <th>Student name</th>
+            <th>Gender</th>
+            <th>Gender</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1234</td>
+                <td>Bill</td>
+                <td>Male</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td>Bill</td>
+                <td>Male</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td>Bill</td>
+                <td>Male</td>
+                <td>17</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="2">
+        <thead>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Male</th>
+            <th>Female</th>
+            <th>Others</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="8">1</td>
+                <td rowspan="4">Kerla</td>
+                <td rowspan="2">Cochin</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+
+
+            <tr>
+                <td>Main Street</td>
+                <td>300</td>
+                <td>288</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Lorem.</td>
+                <td>Lorem.</td>
+                <td>lorem.</td>
+                <td>lorem</td>
+                <td>lorem</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Lorem.</td>
+                <td rowspan="2">Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Lorem.</td>
+                <td rowspan="2">Lorem.</td>
+                <td rowspan="2">Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m</td>
+                <td rowspan="2">5:00 p.m</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Tuesday</td>
+                <td>8:00 a.m</td>
+                <td>11:00 a.m</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+            <tr>
+                <td rowspan="2">11:00 a.m</td>
+                <td rowspan="2">2:00 p.m</td>
+            </tr>
+            <tr>
+                <td rowspan="2">XSL transformation</td>
+            </tr>
+            <tr>
+                <td>2:00 p.m</td>
+                <td>5:00 p.m</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 a.m</td>
+                <td>12:00 p.m</td>
+                <td>XLS Formatting Objects</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
