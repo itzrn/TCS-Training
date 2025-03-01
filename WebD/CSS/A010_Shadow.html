@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* here defined variable can be used through out the css */
+            --color-primary:blue;
+        }
+        .box{
+            background-color: beige;
+            border: 2px solid black;
+            margin: 10px;
+            height: 500px;
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #inner{
+            --primary-color:brown;
+            /* this is a way to create a custom variable here */
+
+            background-color: azure;
+            border: 2px solid red;
+            margin: 2px;
+            height: 320px;
+            width: 320px;
+            /* box-shadow: -10px -15px brown; */
+            /* x y color */
+
+            /* box-shadow: -10px -15px 5px var(--primary-color); */
+            /* x y blur color */
+
+            /* box-shadow: -10px -15px 5px 20px var(--primary-color); */
+            /* x y blur shadow-spread color */
+
+            /* box-shadow: -10px -15px 5px 20px rgb(100, 109, 213); */
+            /* x y blur shadow-spread color-rgb */
+
+            /* box-shadow: inset 10px 15px var(--primary-color); */
+
+            box-shadow: -10px -15px var(--primary-color), 15px 8px green;
+            /* adding multiple content */
+        }
+        h2{
+            /* text-shadow: 2px 3px 1px orange; */
+
+            /* text-shadow: yellow 2px 3px 1px; */
+
+            /* text-shadow: white 2px 3px; */
+
+            /* text-shadow: 2px 3px ; */
+            /* by default shadow color is black */
+
+            /* text-shadow: white 2px 3px, yellow 2px -3px, blue 2px -3px; */
+            /* adding multiple color */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="inner">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quibusdam.</h2>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    /* border: 2px solid black; */
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+}
+.container{
+    border: 2px solid black;
+    position: relative;
+    width: 8000px;
+    height: 8000px;
+}
+
+.img2{
+    /* top: 100px;  */
+    /* the above property will not work bcz by default the property is static and applying any property on static it reflects nothing. */
+
+
+    position: relative;
+    /* putting relative it starts to take the relative position with respect to window */
+    /* gap will be maitained of the moved element */
+    top: 16px;
+
+    /* absolute positioning */
+    /* is always done with respect to the conatiner it is, and also the container is need to be marked as relative*/
+}
+
+.img3{
+    position: absolute;
+    top: 100px;
+    /* gap will not be maitained of the moved element */
+}
+
+.div2{
+    height: 5000px;
+    background-color: aquamarine;
+}
+.img4{
+    position: fixed;
+    /* will get fixed with respect to the window */
+    /* this particular element will get intact on a postion */
+}
+
+.img1{
+    /* sticky property */
+    position: sticky;
+    top: 100px;
+    /* this element get intant to a postition from top */
+    /* it get sticky till the time it is its parent container */
+}

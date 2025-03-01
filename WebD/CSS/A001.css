@@ -1,0 +1,38 @@
+/* 
+This is a stylesheet.
+CSS -> Cascading Style Sheet
+
+CSS works by taking in four factors, listed in order from highest weight to least weight:
+    Origin and importance.
+    Specificity.
+    Order in the file.
+    Inheritance.
+
+
+We have 3 different types to add CSS
+Inline, Internal, External
+*/
+
+h1{
+    font-size: xx-large;
+    text-align: center;
+}
+
+p{
+    color: blue !important;
+    /* priority -> inline > internal(ordering in html, last written in head tag have high priority)external , but using imporatant u can use prioiritize the lower prioirty*/
+}
+
+p#id1{
+    background-color: antiquewhite;
+}
+
+
+/* 
+Types of Selectors?
+    It is a way to target the particular element.
+    1. tag
+    2. id -> #
+    3. class -> .
+    4. group p,article,#id2{} / p.paraclss{} /p#id1{}
+*/

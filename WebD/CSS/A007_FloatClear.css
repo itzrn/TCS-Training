@@ -1,0 +1,17 @@
+#img1{
+    float: left;
+}
+#img2{
+    float: left;
+    clear: left;/*This will allow to put any element floating in the left of this element if nay floating element is present*/
+}
+.overflowcase{
+    border: solid red 5px;
+    overflow: auto; /*This is to overcome the overflow happening*/
+}
+.overflow{
+    margin: 5px;
+    float: left; /*using this parent box get colapse, this is called overflow*/
+    /* the above issue was happeninh bcz after marking it float the parent container left with no content
+    as all the content got float so the parent container gets shrink and the inner element gets overflow */
+}

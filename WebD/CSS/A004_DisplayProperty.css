@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* using above line the box size retains, and ita good practice to do. */
+}
+
+.fpara{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.ful{
+    width: 341px;
+    margin-left: 40px;
+}

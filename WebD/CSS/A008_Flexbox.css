@@ -1,0 +1,36 @@
+.container{
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* justify-content: center;
+    align-items: center; */
+    flex-wrap: wrap;
+    
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin: 5px;
+    font-size: larger;
+}
+#box1{
+    background-color: aqua;
+    order: 100;
+    /* order is used to give the priority, as given 100 here it will come after every box get displayed
+    This is used to change the sequence of item */
+    flex-shrink: 4;
+    /* this wil allow the content to shrink fast than other 
+    and same we have grow property*/
+}
+#box2{
+    background-color: blue;
+}
+#box3{
+    background-color: orange;
+}
+#box4{
+    background-color: brown;
+}

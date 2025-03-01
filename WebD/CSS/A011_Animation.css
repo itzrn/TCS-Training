@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vw;
+    height: 100vh;
+    background-color: beige;
+    border: 2px solid black;
+}
+.box{
+    width: 350px;
+    height: 80px;
+    background-color: aqua;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    position: relative;
+    animation-name: rigthmove;
+    animation-duration: 5s;
+    /* animation-iteration-count: 2; */
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    /* animation-timing-function: ease-in; */
+    animation-timing-function: cubic-bezier(1, -0.4, 1, 1);
+
+    /* animation-direction: alternate; */
+    /* this makes the animation to travel and return back from the same path */
+
+    /* fill mode is used to decide what you have to do just before the animation starts and just after the animation end */
+    /* animation-fill-mode: forwards; */
+    /* will get stop after reaching to destination */
+
+    /* animation-fill-mode: backwards;  */
+    /* after comming to source it wil get stop */
+
+    /* animation-fill-mode: both; */
+
+    /* @keyframes duration | easing-funtion | delay | iteration-count | direction | fill-mode | play-state | name*/
+    /* the above is short hand notation */
+
+    /* animation: 5s linear 1s infinite alternate none running rightmove; */
+
+}
+
+@keyframes rigthmove {
+    from{
+        top: 0;
+        left: 0;
+    }to{
+        top: 0;
+        left: 1350px;
+    }
+}

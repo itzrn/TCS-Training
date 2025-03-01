@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            border: 2px solid red;
+            width: 50%; /*This with is relaive to the parent element*/
+        }
+        .box1{
+            border: solid green;
+            background-color: beige;
+            width: 80%;
+        }
+        .box1Child{
+            background-color: chocolate;
+            width: 50%;
+        }
+        .container{
+            border: 1px solid green;
+            background-color: antiquewhite;
+            height: 100vh;
+            width: 50%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Use of % -->
+    <div class="box">
+        Welcome To Darknerd. This is the case of %.
+    </div>
+    <br>
+    <div class="box1">
+        <div class="box1Child">
+            Welcome To Darknerd. This is the case of %.
+        </div>
+    </div>
+
+    <br>
+
+    <!-- vh unit -->
+    <div class="container">
+        Welcome to Darknerd.
+    </div>
+
+    <!-- em -> depends on parent element font size, rem-> depends on root element font size  search on mdn -->
+</body>
+</html>

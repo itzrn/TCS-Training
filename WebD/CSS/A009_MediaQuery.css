@@ -1,0 +1,50 @@
+.box{
+    height: 400px;
+    width: 400px;
+    border: 2px solid;
+    background-color: aqua;
+}
+
+@media (min-width:300px) and (max-width:500px) {
+    .box{
+        background-color: green;
+    }
+}
+
+@media (min-width:640px) {
+    .container{
+        flex-direction: row;
+    }
+}
+@media (max-width:640px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
+.container{
+    background-color: beige;
+    border: 2px solid black;
+    margin: 2px;
+    display: flex;
+    padding: 2px;
+}
+.boxx{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+#boxx1{
+    background-color: blue;
+}
+#boxx2{
+    background-color: green;
+}
+#boxx3{
+    background-color: red;
+}
+#boxx4{
+    background-color: orange;
+}

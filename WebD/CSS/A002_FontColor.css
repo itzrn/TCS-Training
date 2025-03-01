@@ -1,0 +1,19 @@
+p#id1{
+    font-style: italic;
+}
+p.class1{
+    background-color: burlywood;
+    font-weight: 200;
+    line-height: 30px;
+}
+p#id3{
+    font-family: "Playwrite IT Moderna", serif;
+}
+
+/* 
+Calors can be add using
+1. name
+2. rgb / rgba
+3. hexa value
+4. hsl
+*/
