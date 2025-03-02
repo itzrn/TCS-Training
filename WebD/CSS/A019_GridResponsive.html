@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Responsive</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            padding: 4rem;
+            display: grid;
+            gap: 1rem;
+            background-color: rgb(220, 217, 217);
+            /* grid-template-columns: repeat(3, 1fr); */
+
+            grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+            /* this is alternate of media query in grid */
+
+            justify-content: center;
+        }
+        .item{
+            padding: 1rem;
+            border: 5px solid black;
+            background-color: rgb(61, 61, 219);
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+        <div class="item">N</div>
+        <div class="item">O</div>
+        <div class="item">P</div>
+        <div class="item">Q</div>
+        <div class="item">R</div>
+        <div class="item">S</div>
+        <div class="item">T</div>
+        <div class="item">U</div>
+        <div class="item">V</div>
+        <div class="item">W</div>
+        <div class="item">X</div>
+        <div class="item">Y</div>
+        <div class="item">Z</div>
+    </div>
+</body>
+</html>
