@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="A003_formsubmission.css">
+</head>
+<body>
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Share a Picture</legend>
+
+            <input type="file" id="picture" multiple>
+            <label for="picture">Upload a Picture</label>
+
+            <br><br>
+
+            <input type="text" id="name">
+            <label for="name">Name of the Picture</label>
+
+            <br><br>
+
+            <input type="date" id="date">
+            <label for="date">Date Picture Taken</label>
+
+            <br><br>
+
+            <textarea id="description"></textarea>
+            <label for="description">Describe the picture</label>
+        </fieldset>
+
+    </form>
+</body>
+</html>
+
+<!-- 
+
+method attribute
+    get -> the browser is sending a request to ask for resource, with ans empty body in the request
+    post(prefered method as it is much more secure) -> the browser send the http request to server to ask for response with the data int the body fo the  request
+
+Validation
+    clint side validation (on submit) -> this si done when the form is submitted
+    clint side validation (inline) -> you get validation message as the user is filling out the form before they click submit..
+    server side validation -> it is done after the form is submitted, when the server send back as error message
+-->

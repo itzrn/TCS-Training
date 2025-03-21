@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A01_basicform</title>
+</head>
+<body>
+    <form method="post" action="" id="questions" name="questions">
+        <label for="name">What is your name?</label> <input type="text" name="name" id="name">
+
+        <br>
+
+        <label for="email">Email :</label> <input type="email" id="email" name="email">
+        <!-- in input of email we can prove multiple email address, the box on fonrt end can accept multiple email seperated by ',' -->
+
+        <br>
+
+        <label for="website">Website :</label> <input type="url" id="website" name="website">
+
+        <br>
+
+        <!-- 
+        number input,
+            we can use min nad max attribute to set the range of the value to be entered
+            step attrbute is used take the next number with respect to 0
+            step=any is used to input any number
+        
+        date -> like birthday
+            this also have the min and max attribute and format is year-month-day
+
+        time ->
+            this have step attribut which takes value in seconds
+        
+        tel -> 
+            used to have input phone number
+
+        
+        Radio Button -> the user can select one of the options
+            type="radio"
+            all the radio button should have the value of name attribute same
+            checked attribut can be used if you want to show any of the radio button to be marked by default
+        
+
+        fieldset is used to set the field for a particular question and in that we use legend where we write the question
+            the inner space contains the radio or checkbox button for that particular question
+
+        checkbox
+            same everything just like radio, but put the type as checkbox
+
+        
+        
+        select -> is used to have the drop down menu
+            inside the select field we prove the option with value
+            mutiple attribute is used to allow the user to select multiple options
+            size attribute is used to show how many values should be visible
+            in select we can use optgroup to create categories
+        
+        textarea
+            used to provide user to input some para
+        
+        color
+            allow user to select colors
+
+        files
+            allow user to upload a file
+            multiple attribute is used to upload more than on file
+            accept is used to input the particular type of file
+
+        password
+            allow user to enter the password
+        
+        hidden -> this is used to provide to server by default
+                value adn name attribute is used
+        
+        range -> this provide you the range to select
+
+        search
+
+        There are several different ways to create button
+        
+        input type ->
+                submit
+                reset -> used to reset the field to default value
+                button -> this take a customize action
+                image -> this will act like image
+        button
+            submit
+            rest
+            -->
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>04_06 Exercise - End</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<style>
+        button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%
+}
+input, textarea, select {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+select {
+	display: block;
+	margin-bottom: 20px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: white;
+}
+select:not([multiple]) {
+	background: url(double-arrow.png) right center no-repeat;
+	background-size: 1em 1em;
+	padding-right: 1em;
+	background-color: #fdebd0;
+}
+select {
+	padding: 8px 1em 8px 8px;
+	background-color: #fdebd0;
+	border: 2px solid #af601a;
+}
+option {
+	padding: 5px;
+}
+optgroup {
+	border: 1px dashed #af601a;
+	padding: 5px;
+
+}
+    </style>
+</head>
+
+<body>
+	<form action="" method="post">
+		<form action="" method="get">
+			<label for="favcolor">What is your favorite color?</label> 
+			<select id="favcolor" name="favcolor">
+			<option value="blue">blue</option>
+			<option value="green">green</option>
+			<option value="red">red</option>
+			</select> 
+
+		<label for="dessert">What is your favorite dessert?</label> 
+		<select id="dessert" name="dessert">
+			<optgroup label="pies">
+				<option value="apple">apple pie</option>
+				<option value="pumpkin">pumpkin pie</option>
+			</optgroup>
+			<optgroup label="cakes">
+				<option value="chocolate">chocolate cake</option>
+				<option value="lemon">lemon cake</option>
+			</optgroup>
+		</select> 
+
+			<label for="season">What are your favorite seasons?</label> 
+			<select id="season" multiple name="season">
+				<option value="spring">spring</option>
+				<option value="summer">summer</option>
+				<option value="fall">fall</option>
+				<option value="winter">winter</option>
+			</select> 
+
+			<label for="topping">What is your favorite pizza topping?</label> 
+			<select id="topping" name="topping" multiple>
+			<optgroup label="meats">
+				<option value="sausage">sausage</option>
+				<option value="pepperoni">pepperoni</option>
+			</optgroup>
+			<optgroup label="veggies">
+				<option value="mushrooms">mushrooms</option>
+				<option value="greenpeppers">green peppers</option>
+			</optgroup>
+			</select>
+		</form>
+	</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A001</title>
+    <!-- <script src="script.js" async></script> -->
+    <!-- <script src="A001.js" defer></script> -->
+</head>
+<body>
+    
+</body>
+<script src="A001.js"></script>
+</html>
+
+<!-- 
+New JS loading Methods
+    <script src="script.js"></script>
+- Right away loading (thi is JS render blocking)
+    HTML is loaded
+    JS downloaded
+    JS execution
+    HTML parsing
+
+
+    HTML parsing       ---------------          -------
+    JS download                       ------
+    JS execution                            ----
+
+- Asynchronous loading
+    <script src="script.js" async></script>
+    here the js file will download along the HTML loaded
+    and html parsing is done when the execution of js is done
+
+    HTML parsing       ---------------    -------
+    JS download                 ------
+    JS execution                      ----
+
+
+- Deferred loading
+    <script src="script.js" defer></script>
+    loading and exection of the file, even it is in head only happen when everything else is loaded
+    HTML parsing       ----------------------
+    JS download                 ------
+    JS execution                             ----
+
+
+
+-->

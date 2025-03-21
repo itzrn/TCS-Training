@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        input[type="radio"]{
+            opacity: 0;
+            height: 0;
+            width: 0;
+        }
+
+        input[type="radio"] + label{
+            border: 2px solid yellow;
+            background-color: yellow;
+            padding: 4px 10px;
+            border-radius: 7px;
+            display: inline;
+            text-align: center;
+        }
+        input[type="radio"]:checked + label{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>E radio button hai</legend>
+
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+
+    </fieldset>
+</body>
+</html>

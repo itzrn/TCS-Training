@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>04_07 Exercise - End</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<style>
+        button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%
+}
+input, textarea, select {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#styled input, #styled button {
+
+}
+input, button {
+
+}
+#styled input[type="submit"]:focus, #styled button[type="submit"]:focus {
+	border: 2px solid green;
+	outline:none;
+}
+#styled input[type="submit"]:hover, #styled button[type="submit"]:hover {
+	border: 2px solid red;
+}
+#styled input[type="submit"]:active, #styled button[type="submit"]:active {
+	background-color: orange;
+}
+    </style>
+</head>
+
+<body>
+	<form action="" method="post">
+		<div>Not styled: <br><br>
+			<input type="submit" value="Input">
+			<button type="submit">Button</button>
+		</div>
+
+		<br><br>
+
+		<div id="styled">Styled: <br><br>
+			<input type="submit" value="Input">
+			<button type="submit">Button <span>button</span></button>
+		</div>
+	</form>
+</body>
+</html>
